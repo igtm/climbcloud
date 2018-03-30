@@ -61,4 +61,9 @@ public class PlayerController : MonoBehaviour {
 			SceneManager.LoadScene ("GameScene");
 		}
 	}
+
+	// ゴール判定
+	void OnTriggerEnter2D (Collider2D other) {
+		Debug.Log ("ゴール");
+	}
 }
